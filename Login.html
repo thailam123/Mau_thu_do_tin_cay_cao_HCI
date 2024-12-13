@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+
+      .login-container {
+        background-color: #fff;
+        display: flex;
+        max-width: 480px;
+        width: 100%;
+        padding-bottom: 8px;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        margin: 0 auto;
+        font: 600 18px Inter, sans-serif;
+      }
+
+      .status-wrapper {
+        justify-content: flex-end;
+        background: var(--Base-Light-Light-100, #fff);
+        align-self: stretch;
+        display: flex;
+        width: 100%;
+        gap: 40px 100px;
+        font-size: 15px;
+        color: var(--Colors-Dark-Base-1, #161719);
+        text-align: center;
+        letter-spacing: -0.17px;
+        line-height: 1.2;
+        padding: 13px 14px 13px 32px;
+      }
+
+      .status-icon {
+        aspect-ratio: 5.59;
+        object-fit: contain;
+        object-position: center;
+        width: 67px;
+        border-radius: 0;
+        margin: auto 0;
+      }
+
+      .nav-header {
+        background-color: rgba(255, 255, 255, 1);
+        align-self: stretch;
+        display: flex;
+        min-height: 64px;
+        width: 100%;
+        align-items: center;
+        gap: 40px 64px;
+        color: var(--Base-Dark-Dark-50, #212325);
+        text-align: center;
+        justify-content: start;
+        padding: 16px;
+      }
+
+      .nav-content {
+        align-self: stretch;
+        display: flex;
+        min-width: 240px;
+        width: 100%;
+        gap: 16px;
+        justify-content: space-between;
+        flex: 1;
+      }
+
+      .back-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 32px;
+        margin: auto 0;
+      }
+
+      .page-title {
+        width: 247px;
+      }
+
+      .login-form {
+        width: 100%;
+        max-width: 343px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .input-wrapper {
+        justify-content: center;
+        border-radius: 16px;
+        border: 1px solid var(--Base-Light-Light-60, #f1f1fa);
+        background: var(--Base-Light-Light-100, #fff);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        font-size: 16px;
+        color: var(--Base-Light-Light-20, #91919f);
+        font-weight: 400;
+        padding: 12px 16px;
+      }
+
+      .email-field {
+        margin-top: 56px;
+        min-height: 56px;
+      }
+
+      .password-field {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+      }
+
+      .password-input-group {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px 100px;
+      }
+
+      .toggle-password {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 32px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .login-button {
+        align-self: stretch;
+        border-radius: 16px;
+        background: var(--Violet-Violet-100, #7f3dff);
+        border: none;
+        margin-top: 40px;
+        min-height: 56px;
+        width: 100%;
+        color: var(--Base-Light-Light-80, #fcfcfc);
+        text-align: center;
+        padding: 17px 8px;
+        cursor: pointer;
+      }
+
+      .forgot-password {
+        color: var(--Violet-Violet-100, #7f3dff);
+        margin-top: 33px;
+        text-decoration: none;
+      }
+
+      .signup-prompt {
+        margin-top: 39px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .signup-text {
+        color: rgba(145, 145, 159, 1);
+      }
+
+      .signup-link {
+        color: var(--Violet-Violet-100, #7f3dff);
+        text-decoration: underline;
+      }
+
+      .home-indicator {
+        border-radius: 100px;
+        background: var(--Label-Color-Light-Primary, #000);
+        margin-top: 290px;
+        width: 134px;
+        height: 5px;
+      }
+    </style>
+
+    <div class="login-container">
+      <div class="status-wrapper">
+        <div>9:41</div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/74af7e9eddc244d093b12af2b6243852/20a5b7687218e1b919dc0ce8d016a520399cf9dfee76889972c15a8adf60bdaf?apiKey=74af7e9eddc244d093b12af2b6243852&"
+          alt=""
+          class="status-icon"
+        />
+      </div>
+
+      <nav class="nav-header">
+        <div class="nav-content">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/74af7e9eddc244d093b12af2b6243852/d07c4fe13b9c0c40d629082f77454da6f64399a1621a0224c4411d94684f844a?apiKey=74af7e9eddc244d093b12af2b6243852&"
+            alt="Go back"
+            class="back-icon"
+          />
+          <h1 class="page-title">Đăng nhập</h1>
+        </div>
+      </nav>
+
+      <form class="login-form">
+        <div class="input-wrapper email-field">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+
+        <div class="input-wrapper password-field">
+          <div class="password-input-group">
+            <label for="password" class="visually-hidden">Mật khẩu</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Mật khẩu"
+              required
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              aria-label="Toggle password visibility"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/74af7e9eddc244d093b12af2b6243852/0015f00ae188123fca3ebe9fba1cfcca30a7c8e509426d44b286a0c9429115ab?apiKey=74af7e9eddc244d093b12af2b6243852&"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="login-button">Đăng nhập</button>
+      </form>
+
+      <a href="#" class="forgot-password">Quên mật khẩu?</a>
+
+      <div class="signup-prompt">
+        <span class="signup-text">Chưa có tài khoản?</span>
+        <a href="#" class="signup-link">Đăng ký</a>
+      </div>
+
+      <div class="home-indicator" role="presentation"></div>
+    </div>
+  </body>
+</html>
