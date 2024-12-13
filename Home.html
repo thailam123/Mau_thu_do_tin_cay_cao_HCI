@@ -5,6 +5,87 @@
   </head>
   <body>
     <style>
+      .transaction-container {
+        border-radius: 24px;
+        background: var(--Base-Light-Light-80, #fcfcfc);
+        width: 100%;
+        max-width: 336px;
+        padding: 15px 17px;
+        margin-top: 8px;
+        align-self: center;
+      }
+
+      .transaction-row {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        gap: 9px;
+      }
+
+      .transaction-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        background: var(--Red-Red-20, #fdd5d7);
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+      }
+
+      .transaction-icon-image {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        alt: "Food shopping transaction icon";
+      }
+
+      .transaction-details {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        font-family: Inter, sans-serif;
+      }
+
+      .transaction-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 60px;
+        padding: 6px 0;
+        font-weight: 500;
+      }
+
+      .transaction-title {
+        color: var(--Base-Dark-Dark-25, #292b2d);
+        font-size: 16px;
+      }
+
+      .transaction-subtitle {
+        color: var(--Base-Light-Light-20, #91919f);
+        font-size: 13px;
+        margin-top: 13px;
+      }
+
+      .transaction-amount-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+
+      .transaction-amount {
+        color: var(--Red-Red-100, #fd3c4a);
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .transaction-time {
+        color: var(--Base-Light-Light-20, #91919f);
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 12px;
+      }
       .visually-hidden {
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
@@ -88,7 +169,153 @@
         justify-content: space-between;
         font: 500 10px Inter, sans-serif;
       }
+      .transaction-nearly {
+        margin-right: 10px;
+        padding: 10px;
+        height: 300px;
+        width: 100%;
+        position: fixed;
+        bottom: 10%;
+      }
+      .transaction-card {
+        display: flex;
+        max-width: 336px;
+        flex-direction: column;
+      }
+
+      .transaction-wrapper {
+        border-radius: 24px;
+        background: var(--Base-Light-Light-80, #fcfcfc);
+        width: 100%;
+        padding: 15px 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .transaction-content {
+        display: flex;
+        width: 100%;
+        align-items: start;
+        gap: 9px;
+      }
+
+      .icon-container {
+        align-items: center;
+        border-radius: 16px;
+        background: var(--Violet-Violet-20, #eee5ff);
+        display: flex;
+        gap: 10px;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+      }
+
+      .transaction-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 40px;
+      }
+
+      .transaction-details {
+        display: flex;
+        gap: 40px 55px;
+        font-family: Inter, sans-serif;
+        justify-content: space-between;
+        flex: 1;
+        flex-basis: 20px;
+      }
+
+      .transaction-info {
+        display: flex;
+        min-height: 60px;
+        flex-direction: column;
+        font-weight: 500;
+        justify-content: space-between;
+        margin: auto 0;
+        padding: 6px 0;
+      }
+
+      .transaction-title {
+        color: var(--Base-Dark-Dark-25, #292b2d);
+        font-size: 16px;
+      }
+
+      .transaction-description {
+        color: var(--Base-Light-Light-20, #91919f);
+        font-size: 13px;
+        margin-top: 13px;
+      }
+
+      .transaction-amount-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+      }
+
+      .transaction-amount {
+        color: var(--Red-Red-100, #fd3c4a);
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .transaction-time {
+        color: var(--Base-Light-Light-20, #91919f);
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 12px;
+      }
     </style>
+    <div class="transaction-nearly">
+      <div class="transaction-card">
+        <div class="transaction-wrapper">
+          <div class="transaction-content">
+            <div class="icon-container">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/74af7e9eddc244d093b12af2b6243852/1da84e104e92662b09eb8ce008854720c6b58118b4d5c588568c0c6bdfbbc7ba?apiKey=74af7e9eddc244d093b12af2b6243852&"
+                alt="Transaction icon"
+                class="transaction-icon"
+              />
+            </div>
+            <div class="transaction-details">
+              <div class="transaction-info">
+                <div class="transaction-title">Đăng ký</div>
+                <div class="transaction-description">Netflix, FPT Play,...</div>
+              </div>
+              <div class="transaction-amount-wrapper">
+                <div class="transaction-amount">- $80</div>
+                <div class="transaction-time">03:30 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-container">
+        <div class="transaction-row">
+          <div class="transaction-icon">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/74af7e9eddc244d093b12af2b6243852/6cce55b84f855423591a92c677c4ec247c574e3608edcf925de67e1069a5b753?apiKey=74af7e9eddc244d093b12af2b6243852&"
+              class="transaction-icon-image"
+              alt="Food shopping transaction icon"
+            />
+          </div>
+          <div class="transaction-details">
+            <div class="transaction-info">
+              <div class="transaction-title">Thức ăn</div>
+              <div class="transaction-subtitle">Đi chợ</div>
+            </div>
+            <div class="transaction-amount-wrapper">
+              <div class="transaction-amount">- $32</div>
+              <div class="transaction-time">07:30 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <nav class="navigation-menu" role="navigation" aria-label="Main navigation">
       <div class="nav-group">

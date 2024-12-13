@@ -88,6 +88,10 @@
 
       .page-title {
         width: 247px;
+        position: absolute; /* Allows it to float in the center */
+        left: 50%;
+        transform: translateX(-50%); /* Centers horizontally */
+        margin: 0; /* Removes extra spacing around the heading */
       }
 
       .login-form {
@@ -235,7 +239,20 @@
           </div>
         </div>
 
-        <button type="submit" class="login-button">Đăng nhập</button>
+        <button
+          onclick="navigateToHomePage(event)"
+          type="submit"
+          class="login-button"
+        >
+          Đăng nhập
+        </button>
+
+        <script>
+          function navigateToHomePage(event) {
+            event.preventDefault(); // Prevent the form submission
+            window.location.href = "Home.html"; // Change this to the path of your target page
+          }
+        </script>
       </form>
 
       <a href="#" class="forgot-password">Quên mật khẩu?</a>
