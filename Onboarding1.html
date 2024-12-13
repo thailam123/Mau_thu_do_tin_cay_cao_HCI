@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .onboarding-container {
+        background: #fff;
+        display: flex;
+        max-width: 480px;
+        width: 100%;
+        padding: 0 0 8px;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .status-header {
+        justify-content: flex-end;
+        background: var(--Base-Light-Light-100, #fff);
+        align-self: stretch;
+        display: flex;
+        width: 100%;
+        gap: 100px;
+        padding: 13px 14px 13px 32px;
+      }
+
+      .time {
+        color: var(--Colors-Dark-Base-1, #161719);
+        letter-spacing: -0.17px;
+        font: 600 15px/1.2 Inter, sans-serif;
+      }
+
+      .status-icon {
+        aspect-ratio: 5.59;
+        object-fit: contain;
+        width: 67px;
+        margin: auto 0;
+      }
+
+      .hero-image {
+        aspect-ratio: 1;
+        object-fit: contain;
+        width: 100%;
+        margin-top: 32px;
+        max-width: 312px;
+      }
+
+      .main-heading {
+        color: var(--Base-Dark-Dark-50, #212325);
+        text-align: center;
+        margin-top: 45px;
+        font: 700 32px/1 Inter, sans-serif;
+      }
+
+      .subtitle {
+        color: var(--Base-Light-Light-20, #91919f);
+        text-align: center;
+        margin-top: 52px;
+        width: 272px;
+        font: 500 16px Inter, sans-serif;
+      }
+
+      .progress-dots {
+        aspect-ratio: 4;
+        object-fit: contain;
+        width: 64px;
+        margin-top: 31px;
+      }
+
+      .btn {
+        align-self: stretch;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 343px;
+        min-height: 56px;
+        font: 600 18px Inter, sans-serif;
+        cursor: pointer;
+        border: none;
+        padding: 17px 8px;
+      }
+
+      .btn:focus {
+        outline: 2px solid #000;
+        outline-offset: 2px;
+      }
+
+      .btn-primary {
+        background: var(--Violet-Violet-100, #7f3dff);
+        color: var(--Base-Light-Light-80, #fcfcfc);
+        margin-top: 33px;
+      }
+
+      .btn-secondary {
+        background: var(--Violet-Violet-20, #eee5ff);
+        color: var(--Violet-Violet-100, #7f3dff);
+        margin-top: 16px;
+      }
+
+      .bottom-indicator {
+        border-radius: 100px;
+        background: var(--Label-Color-Light-Primary, #000);
+        display: flex;
+        margin-top: 29px;
+        width: 134px;
+        max-width: 100%;
+      }
+
+      .indicator-bar {
+        border-radius: 100px;
+        background: var(--Label-Color-Light-Primary, #000);
+        height: 5px;
+        width: 100%;
+      }
+    </style>
+
+    <div class="onboarding-container">
+      <header class="status-header">
+        <time class="time">9:41</time>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/20a5b7687218e1b919dc0ce8d016a520399cf9dfee76889972c15a8adf60bdaf?placeholderIfAbsent=true&apiKey=74af7e9eddc244d093b12af2b6243852"
+          alt="Status indicators"
+          class="status-icon"
+        />
+      </header>
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a3ba4d50a1ae6bf909e4b01f7684d24ce21e6dba76ab8d4e69453cf217c056c?placeholderIfAbsent=true&apiKey=74af7e9eddc244d093b12af2b6243852"
+        alt="Financial management illustration"
+        class="hero-image"
+      />
+      <h1 class="main-heading">Kiểm soát dòng tiền</h1>
+      <p class="subtitle">
+        Trở thành người quản lý tài chính cá nhân của chinh minh
+      </p>
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/53c08f0281aa5139b222fccf1faedc30209cffd93bdb1810707b6c92adbf5719?placeholderIfAbsent=true&apiKey=74af7e9eddc244d093b12af2b6243852"
+        alt="Progress indicator"
+        class="progress-dots"
+      />
+      <button class="btn btn-primary" tabindex="0">Đăng ký</button>
+      <button class="btn btn-secondary" tabindex="0">Đăng nhập</button>
+      <div class="bottom-indicator">
+        <div class="indicator-bar"></div>
+      </div>
+    </div>
+  </body>
+</html>
