@@ -145,10 +145,17 @@
         class="progress-dots"
       />
       <button class="btn btn-primary" tabindex="0">Đăng ký</button>
-      <button class="btn btn-secondary" tabindex="0">Đăng nhập</button>
+      <button onclick="navigateToPage()" class="btn btn-secondary" tabindex="0">
+        Đăng nhập
+      </button>
       <div class="bottom-indicator">
         <div class="indicator-bar"></div>
       </div>
+      <script>
+        function navigateToPage() {
+          window.location.href = "Home.html"; // Change this to the path of your target page
+        }
+      </script>
     </div>
   </body>
 </html>
