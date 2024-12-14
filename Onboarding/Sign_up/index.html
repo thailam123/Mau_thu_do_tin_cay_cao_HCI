@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com/3.2.0"></script>
+    <script src="./tailwind.config.js"></script>
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+
+      menu,
+      ol,
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-[#ffffff] h-[812px] relative overflow-hidden">
+      <div
+        class="bg-violet-violet-100 rounded-2xl p-2 flex flex-row gap-2.5 items-center justify-center w-[343px] h-14 absolute left-4 top-[460px]"
+      >
+        <div
+          class="text-base-light-light-80 text-left font-['Inter-SemiBold',_sans-serif] text-lg font-semibold relative flex items-center justify-start"
+        >
+          Sign Up
+        </div>
+      </div>
+      <div
+        class="bg-violet-violet-100 rounded-2xl p-2 flex flex-row gap-2.5 items-center justify-center w-[343px] h-14 absolute left-4 top-[460px]"
+      >
+        <div
+          class="text-base-light-light-80 text-center font-title-title-3-font-family text-title-title-3-font-size font-title-title-3-font-weight relative flex items-center justify-center"
+        >
+          Đăng ký
+        </div>
+      </div>
+      <div
+        class="rounded-2xl border-solid border-base-light-light-60 border p-2 flex flex-row gap-2.5 items-center justify-center w-[343px] h-14 absolute left-4 top-[558px]"
+      >
+        <img
+          class="shrink-0 w-8 h-8 relative overflow-visible"
+          src="flat-color-icons-google0.svg"
+        />
+        <div
+          class="text-base-dark-dark-50 text-left font-title-title-3-font-family text-title-title-3-font-size font-title-title-3-font-weight relative flex items-center justify-start"
+        >
+          Đăng ký với Google
+        </div>
+      </div>
+      <div
+        class="text-base-light-light-20 text-left font-['Inter-Bold',_sans-serif] text-sm leading-[18px] font-bold absolute left-[164px] top-[528px]"
+      >
+        Hoặc
+      </div>
+      <div
+        class="text-left font-['Inter-Medium',_sans-serif] text-base font-medium absolute left-[calc(50%_-_122.5px)] top-[633px]"
+      >
+        <span>
+          <span class="c-t-i-kho-nt-ng-nh-p-span">Đã có tài khoảnt?</span>
+          <span class="c-t-i-kho-nt-ng-nh-p-span2">Đăng nhập</span>
+        </span>
+      </div>
+      <div
+        class="bg-base-light-light-100 rounded-2xl border border-base-light-light-60 p-4 flex items-center w-[343px] h-14 absolute left-4 top-[164px]"
+      >
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required
+          class="bg-transparent text-base-light-light-20 text-left font-sans text-base leading-[18px] w-full focus:outline-none"
+        />
+      </div>
+      <div
+        class="bg-base-light-light-100 rounded-2xl border border-base-light-light-60 p-4 flex items-center w-[343px] h-14 absolute left-4 top-[244px]"
+      >
+        
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          class="bg-transparent text-base-light-light-20 text-left font-sans text-base leading-[18px] w-full focus:outline-none"
+        />
+      </div>
+      <div
+  class="bg-base-light-light-100 rounded-2xl border border-base-light-light-60 p-4 flex items-center justify-between w-[343px] h-14 absolute left-4 top-[324px]"
+>
+  <div class="flex items-center gap-2 w-full ml-2">
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Enter your password"
+      required
+      class="bg-transparent text-base-light-light-20 text-left font-sans text-base leading-[18px] w-full focus:outline-none"
+    />
+    <button
+      type="button"
+      id="togglePassword"
+      class="w-8 h-8 flex items-center justify-center"
+      aria-label="Toggle Password Visibility"
+    >
+      <img
+        src="eye0.svg"
+        alt="Toggle visibility"
+        class="w-[68.2%] h-[46.81%]"
+      />
+    </button>
+  </div>
+</div>
+
+      <div class="bg-base-light-light-100 w-[375px] h-11 absolute left-0 top-0">
+        <div
+          class="text-colors-dark-base-1 text-center font-['Inter-SemiBold',_sans-serif] text-[15px] leading-[18px] font-semibold absolute left-[19.89px] top-3.5 w-[54px]"
+          style="letter-spacing: -0.17px"
+        >
+          9:41
+        </div>
+        <img
+          class="h-[auto] absolute left-[293.5px] top-[16.16px] overflow-visible"
+          src="container0.svg"
+        />
+      </div>
+      <div
+        class="bg-[#ffffff] p-4 flex flex-row gap-16 items-center justify-start w-[375px] h-16 absolute left-0 top-11"
+      >
+        <div class="flex flex-row items-center justify-between flex-1 relative">
+          <div class="shrink-0 w-8 h-8 relative overflow-hidden">
+            <img
+              class="w-[74.99%] h-[50.44%] absolute right-[12.5%] left-[12.51%] bottom-[24.78%] top-[24.78%] overflow-visible"
+              src="arrow-left0.svg"
+            />
+          </div>
+          <div
+            class="text-base-dark-dark-50 text-center font-title-title-3-font-family text-title-title-3-font-size font-title-title-3-font-weight relative self-stretch w-[247px] flex items-center justify-center"
+          >
+            Đăng ký
+          </div>
+          <div
+            class="shrink-0 w-8 h-8 relative overflow-hidden"
+            style="opacity: 0"
+          >
+            <img
+              class="w-[68.77%] h-[68.75%] absolute right-[15.6%] left-[15.62%] bottom-[15.62%] top-[15.62%] overflow-visible"
+              src="create0.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-8 h-8 absolute left-4 top-[397px] overflow-hidden">
+        <img
+          class="w-[75%] h-[75%] absolute right-[12.5%] left-[12.5%] bottom-[12.5%] top-[12.5%] overflow-visible"
+          src="checkbox-blank0.svg"
+        />
+      </div>
+      <div
+        class="text-left font-body-body-3-font-family text-body-body-3-font-size leading-body-body-3-line-height font-body-body-3-font-weight absolute left-[58px] top-[397px] w-[291px] flex items-center justify-start"
+      >
+        <span>
+          <span
+            class="b-n-c-ng-v-i-i-u-kho-n-d-ch-v-v-ch-nh-s-ch-quy-n-ri-ng-t-span"
+          >
+            Bạn có đồng ý với
+          </span>
+          <span
+            class="b-n-c-ng-v-i-i-u-kho-n-d-ch-v-v-ch-nh-s-ch-quy-n-ri-ng-t-span2"
+          >
+            Điều khoản dịch vụ và Chính sách quyền riêng tư
+          </span>
+          <span
+            class="b-n-c-ng-v-i-i-u-kho-n-d-ch-v-v-ch-nh-s-ch-quy-n-ri-ng-t-span3"
+          >
+            ?
+          </span>
+        </span>
+      </div>
+      <div style="position: fixed;bottom: 0;" class="w-[375px] h-[34px] sticky left-0 bottom-0">
+        <div
+          class="bg-label-color-light-primary rounded-[100px] w-[134px] h-[5px] absolute left-[50%] bottom-2"
+          style="translate: -50%"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
