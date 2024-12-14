@@ -1,296 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
-  
-  
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
-  <title>Document</title>
-</head>
-<body>
-  <div class="transaction-filter">
-    <div class="top-navigation">
-      <div class="frame-87">
-        <div class="pill">
-          <div class="magicons-glyph-arrow-arrow-down-2">
-            <img class="arrow-down-2" src="arrow-down-20.svg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+
+      menu,
+      ol,
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="transaction-filter">
+      <div class="top-navigation">
+        <div class="frame-87">
+          <div class="pill">
+            <div class="magicons-glyph-arrow-arrow-down-2">
+              <img class="arrow-down-2" src="arrow-down-20.svg" />
+            </div>
+            <div class="month">Tháng</div>
           </div>
-          <div class="month">Tháng</div>
-        </div>
-        <div class="frame-86">
-          <div class="button-icon">
-            <div class="magicons-glyph-user-interface-sort">
-              <img class="sort" src="sort0.svg" />
+          <div class="frame-86">
+            <div class="button-icon">
+              <div class="magicons-glyph-user-interface-sort">
+                <img class="sort" src="sort0.svg" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bars">
-      <div class="frame-76">
-        <div class="see-your-financial-report">See your financial report</div>
-        <div class="magicons-glyph-arrow-arrow-right-2">
-          <img class="arrow-right-2" src="arrow-right-20.svg" />
-        </div>
-      </div>
-    </div>
-    <div class="card-transaction">
-      <div class="rectangle-2"></div>
-      <div class="frame-6">
-        <div class="frame-5">
-          <div class="magicons-glyph-ecommerce-shopping-shopping-bag">
-            <img class="shopping-bag" src="shopping-bag0.svg" />
-          </div>
-        </div>
-        <div class="frame-4">
-          <div class="frame-3">
-            <div class="shopping">Mua sắm</div>
-            <div class="buy-an-avocado">Mua đồ thiết yếu</div>
-          </div>
-          <div class="frame-47">
-            <div class="rp-229-000">- $120</div>
-            <div class="_03-30-pm">10:00 AM</div>
+      <div class="bars">
+        <div class="frame-76">
+          <div class="see-your-financial-report">See your financial report</div>
+          <div class="magicons-glyph-arrow-arrow-right-2">
+            <img class="arrow-right-2" src="arrow-right-20.svg" />
           </div>
         </div>
       </div>
-    </div>
-    <div class="card-transaction2">
-      <div class="rectangle-2"></div>
-      <div class="frame-6">
-        <div class="frame-52">
-          <div class="magicons-glyph-travel-restaurant">
-            <img class="restaurant" src="restaurant0.svg" />
+      <div class="card-transaction">
+        <div class="rectangle-2"></div>
+        <div class="frame-6">
+          <div class="frame-5">
+            <div class="magicons-glyph-ecommerce-shopping-shopping-bag">
+              <img class="shopping-bag" src="shopping-bag0.svg" />
+            </div>
           </div>
-        </div>
-        <div class="frame-4">
-          <div class="frame-3">
-            <div class="shopping">Food</div>
-            <div class="buy-an-avocado">Buy a ramen</div>
-          </div>
-          <div class="frame-47">
-            <div class="rp-229-000">- $32</div>
-            <div class="_03-30-pm">07:30 PM</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bars2">
-      <div class="frame-88">
-        <div class="yesterday">Today</div>
-      </div>
-    </div>
-    <div class="bars3">
-      <div class="frame-88">
-        <div class="yesterday">Yesterday</div>
-      </div>
-    </div>
-    <div class="card-transaction3">
-      <div class="rectangle-2"></div>
-      <div class="frame-6">
-        <div class="frame-53">
-          <div class="magicons-glyph-finance-salary">
-            <img class="salary" src="salary0.svg" />
-          </div>
-        </div>
-        <div class="frame-4">
-          <div class="frame-3">
-            <div class="salary2">Salary</div>
-            <div class="buy-an-avocado">Salary for July</div>
-          </div>
-          <div class="frame-47">
-            <div class="rp-3-129-000">+ 5000</div>
-            <div class="_04-30-pm">04:30 PM</div>
+          <div class="frame-4">
+            <div class="frame-3">
+              <div class="shopping">Mua sắm</div>
+              <div class="buy-an-avocado">Mua đồ thiết yếu</div>
+            </div>
+            <div class="frame-47">
+              <div class="rp-229-000">- $120</div>
+              <div class="_03-30-pm">10:00 AM</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="card-transaction4">
-      <div class="rectangle-2"></div>
-      <div class="frame-6">
-        <div class="frame-54">
-          <div class="magicons-glyph-travel-car">
-            <img class="car" src="car0.svg" />
+      <div class="card-transaction2">
+        <div class="rectangle-2"></div>
+        <div class="frame-6">
+          <div class="frame-52">
+            <div class="magicons-glyph-travel-restaurant">
+              <img class="restaurant" src="restaurant0.svg" />
+            </div>
           </div>
-        </div>
-        <div class="frame-4">
-          <div class="frame-3">
-            <div class="shopping">Transportation</div>
-            <div class="buy-an-avocado">Charging Tesla</div>
-          </div>
-          <div class="frame-47">
-            <div class="rp-229-000">- $18</div>
-            <div class="_03-30-pm">08:30 PM</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-transaction5">
-      <div class="rectangle-2"></div>
-      <div class="frame-6">
-        <div class="frame-55">
-          <div class="magicons-glyph-finance-recurring-bill">
-            <img class="recurring-bill" src="recurring-bill0.svg" />
-          </div>
-        </div>
-        <div class="frame-4">
-          <div class="frame-3">
-            <div class="shopping">Subscription</div>
-            <div class="buy-an-avocado">Disney+ Annual..</div>
-          </div>
-          <div class="frame-47">
-            <div class="rp-229-000">- $80</div>
-            <div class="_03-30-pm">03:30 PM</div>
+          <div class="frame-4">
+            <div class="frame-3">
+              <div class="shopping">Food</div>
+              <div class="buy-an-avocado">Buy a ramen</div>
+            </div>
+            <div class="frame-47">
+              <div class="rp-229-000">- $32</div>
+              <div class="_03-30-pm">07:30 PM</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="card-transaction5">
-      <div class="rectangle-2"></div>
-      <div class="frame-6">
-        <div class="frame-55">
-          <div class="magicons-glyph-finance-recurring-bill">
-            <img class="recurring-bill2" src="recurring-bill1.svg" />
-          </div>
-        </div>
-        <div class="frame-4">
-          <div class="frame-3">
-            <div class="shopping">Subscription</div>
-            <div class="buy-an-avocado">Disney+ Annual..</div>
-          </div>
-          <div class="frame-47">
-            <div class="rp-229-000">- $80</div>
-            <div class="_03-30-pm">03:30 PM</div>
-          </div>
+      <div class="bars2">
+        <div class="frame-88">
+          <div class="yesterday">Today</div>
         </div>
       </div>
-    </div>
-    <div class="status-bar">
-      <div class="time">9:41</div>
-      <img class="container" src="container0.svg" />
-    </div>
-    <div class="bottom-navigation">
-      <img class="container2" src="container1.svg" />
-      <div class="home2">Home</div>
-      <div class="magicons-glyph-user-interface-home">
-        <img class="home3" src="home2.svg" />
-      </div>
-      <div class="transaction2">Transaction</div>
-      <div class="magicons-glyph-finance-transaction">
-        <img class="transaction3" src="transaction2.svg" />
-      </div>
-      <div class="magicons-glyph-ecommerce-shopping-user">
-        <img class="user" src="user0.svg" />
-      </div>
-      <div class="profile2">Profile</div>
-      <div class="magicons-glyph-finance-pie-chart">
-        <img class="pie-chart" src="pie-chart0.svg" />
-      </div>
-      <div class="budget2">Budget</div>
-      <div class="ellipse-25"></div>
-      <div class="magicons-glyph-user-interface-close">
-        <img class="close" src="close0.svg" />
-      </div>
-    </div>
-    <div class="background-overlay">
-      <div class="rectangle-210"></div>
-    </div>
-    <div class="home-indicator">
-      <div class="home-indicator2"></div>
-    </div>
-    <div class="sheet-bottom">
-      <div class="line-5"></div>
-      <div class="frame-332">
-        <div class="filter-transaction">Lọc các khoản thu chi</div>
-        <div class="pill2">
-          <div class="see-all">Cài đặt lại</div>
+      <div class="bars3">
+        <div class="frame-88">
+          <div class="yesterday">Yesterday</div>
         </div>
       </div>
-      <div class="frame-322">
-        <div class="frame-3322">
-          <div class="filter-by">Lọc theo</div>
-        </div>
-        <div class="frame-321">
-          <div class="frame-318">
-            <div class="income">Thu Nhập</div>
+      <div class="card-transaction3">
+        <div class="rectangle-2"></div>
+        <div class="frame-6">
+          <div class="frame-53">
+            <div class="magicons-glyph-finance-salary">
+              <img class="salary" src="salary0.svg" />
+            </div>
           </div>
-          <div class="frame-319">
-            <div class="expense">Chi tiêu</div>
-          </div>
-          <div class="frame-320">
-            <div class="transfer">Chuyển tiền</div>
+          <div class="frame-4">
+            <div class="frame-3">
+              <div class="salary2">Salary</div>
+              <div class="buy-an-avocado">Salary for July</div>
+            </div>
+            <div class="frame-47">
+              <div class="rp-3-129-000">+ 5000</div>
+              <div class="_04-30-pm">04:30 PM</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="frame-324">
-        <div class="sort-by">Sắp xếp theo</div>
-        <div class="frame-3212">
-          <div class="frame-327">
+      <div class="card-transaction4">
+        <div class="rectangle-2"></div>
+        <div class="frame-6">
+          <div class="frame-54">
+            <div class="magicons-glyph-travel-car">
+              <img class="car" src="car0.svg" />
+            </div>
+          </div>
+          <div class="frame-4">
+            <div class="frame-3">
+              <div class="shopping">Transportation</div>
+              <div class="buy-an-avocado">Charging Tesla</div>
+            </div>
+            <div class="frame-47">
+              <div class="rp-229-000">- $18</div>
+              <div class="_03-30-pm">08:30 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-transaction5">
+        <div class="rectangle-2"></div>
+        <div class="frame-6">
+          <div class="frame-55">
+            <div class="magicons-glyph-finance-recurring-bill">
+              <img class="recurring-bill" src="recurring-bill0.svg" />
+            </div>
+          </div>
+          <div class="frame-4">
+            <div class="frame-3">
+              <div class="shopping">Subscription</div>
+              <div class="buy-an-avocado">Disney+ Annual..</div>
+            </div>
+            <div class="frame-47">
+              <div class="rp-229-000">- $80</div>
+              <div class="_03-30-pm">03:30 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-transaction5">
+        <div class="rectangle-2"></div>
+        <div class="frame-6">
+          <div class="frame-55">
+            <div class="magicons-glyph-finance-recurring-bill">
+              <img class="recurring-bill2" src="recurring-bill1.svg" />
+            </div>
+          </div>
+          <div class="frame-4">
+            <div class="frame-3">
+              <div class="shopping">Subscription</div>
+              <div class="buy-an-avocado">Disney+ Annual..</div>
+            </div>
+            <div class="frame-47">
+              <div class="rp-229-000">- $80</div>
+              <div class="_03-30-pm">03:30 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <img class="container" src="container0.svg" />
+      </div>
+
+      <div class="background-overlay">
+        <div class="rectangle-210"></div>
+      </div>
+      <div style="position: fixed; bottom: 0" class="home-indicator">
+        <div class="home-indicator2"></div>
+      </div>
+      <div class="sheet-bottom">
+        <div class="line-5"></div>
+        <div class="frame-332">
+          <div class="filter-transaction">Lọc các khoản thu chi</div>
+          <div class="pill2">
+            <div class="see-all">Cài đặt lại</div>
+          </div>
+        </div>
+        <div class="frame-322">
+          <div class="frame-3322">
+            <div class="filter-by">Lọc theo</div>
+          </div>
+          <div class="frame-321">
             <div class="frame-318">
-              <div class="highest">Cao nhất</div>
+              <div class="income">Thu Nhập</div>
             </div>
-            <div class="frame-3192">
-              <div class="lowest">Thấp nhất</div>
+            <div class="frame-319">
+              <div class="expense">Chi tiêu</div>
             </div>
             <div class="frame-320">
-              <div class="newest">Mới nhất</div>
-            </div>
-          </div>
-          <div class="frame-326">
-            <div class="frame-3213">
-              <div class="oldest">Cũ nhất</div>
+              <div class="transfer">Chuyển tiền</div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="frame-323">
-        <div class="category">Danh mục</div>
-      </div>
-      <div class="list-item">
-        <div class="frame-98">
-          <div class="title">Chọn danh mục</div>
-          <div class="frame-99">
-            <div class="description">Đã chọn 0</div>
-            <div class="magicons-glyph-arrow-arrow-right-22">
-              <img class="arrow-right-22" src="arrow-right-21.svg" />
+        <div class="frame-324">
+          <div class="sort-by">Sắp xếp theo</div>
+          <div class="frame-3212">
+            <div class="frame-327">
+              <div class="frame-318">
+                <div class="highest">Cao nhất</div>
+              </div>
+              <div class="frame-3192">
+                <div class="lowest">Thấp nhất</div>
+              </div>
+              <div class="frame-320">
+                <div class="newest">Mới nhất</div>
+              </div>
+            </div>
+            <div class="frame-326">
+              <div class="frame-3213">
+                <div class="oldest">Cũ nhất</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="button-large">
-        <div class="primary">Xác nhận</div>
+        <div class="frame-323">
+          <div class="category">Danh mục</div>
+        </div>
+        <div class="list-item">
+          <div class="frame-98">
+            <div class="title">Chọn danh mục</div>
+            <div class="frame-99">
+              <div class="description">Đã chọn 0</div>
+              <div class="magicons-glyph-arrow-arrow-right-22">
+                <img class="arrow-right-22" src="arrow-right-21.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-large">
+          <div class="primary">Xác nhận</div>
+        </div>
       </div>
     </div>
-  </div>
-  
-</body>
+  </body>
 </html>
