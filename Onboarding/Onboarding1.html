@@ -20,9 +20,8 @@
       }
 
       .status-header {
-        justify-content: flex-end;
         background: var(--Base-Light-Light-100, #fff);
-        align-self: stretch;
+
         display: flex;
         width: 100%;
         gap: 100px;
@@ -119,9 +118,10 @@
     </style>
 
     <div class="onboarding-container">
-      <header class="status-header">
+      <header style="position: fixed; left: 0" class="status-header">
         <time class="time">9:41</time>
         <img
+          style="position: fixed; right: 10px"
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/20a5b7687218e1b919dc0ce8d016a520399cf9dfee76889972c15a8adf60bdaf?placeholderIfAbsent=true&apiKey=74af7e9eddc244d093b12af2b6243852"
           alt="Status indicators"
