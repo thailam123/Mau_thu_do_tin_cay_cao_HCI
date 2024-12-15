@@ -93,10 +93,11 @@
                   <div class="title2">Lặp lại</div>
                   <div class="description">Lặp lại giao dịch</div>
                 </div>
-                <div class="switches">
-                  <div class="rectangle-203"></div>
-                  <div class="rectangle-206"></div>
-                </div>
+                <a onclick="saveScroll()" href="../Expense_new_image/index.html"
+                  ><div class="switches">
+                    <div class="rectangle-203"></div>
+                    <div class="rectangle-206"></div></div
+                ></a>
               </div>
               <div class="list-item-switch2">
                 <div class="frame-315">
@@ -118,9 +119,11 @@
         </div>
       </div>
       <div class="rectangle-224"></div>
-      <div class="button-large">
-        <div class="primary">Tiếp tục</div>
-      </div>
+      <a href="../Home_Add/index.html"
+        ><div class="button-large">
+          <div class="primary">Tiếp tục</div>
+        </div></a
+      >
       <div class="status-bar">
         <div class="time">9:41</div>
         <img class="container" src="container0.svg" />
@@ -129,5 +132,11 @@
         <div class="home-indicator2"></div>
       </div>
     </div>
+
+    <script>
+      function saveScroll() {
+        localStorage.setItem("scrollPos", window.scrollY);
+      }
+    </script>
   </body>
 </html>

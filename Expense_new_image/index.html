@@ -102,7 +102,7 @@
               <div class="title2">Lặp lại</div>
               <div class="description">Lặp lại giao dịch</div>
             </div>
-            <a href="../Expense_new_repeat/index.html"
+            <a onclick="saveScroll()" href="../Expense_new_repeat/index.html"
               ><div class="switches">
                 <div class="rectangle-203"></div>
                 <div class="rectangle-206"></div></div
@@ -122,5 +122,18 @@
         <div class="home-indicator2"></div>
       </div>
     </div>
+    <script>
+      function saveScroll() {
+        localStorage.setItem("scrollPos", window.scrollY);
+      }
+
+      // Khôi phục vị trí cuộn
+      window.onload = function () {
+        const scrollPos = localStorage.getItem("scrollPos");
+        if (scrollPos) {
+          window.scrollTo(0, parseInt(scrollPos));
+        }
+      };
+    </script>
   </body>
 </html>

@@ -102,10 +102,11 @@
               <div class="l-p-l-i">Lặp lại</div>
               <div class="l-p-l-i-giao-d-ch">Lặp lại giao dịch</div>
             </div>
-            <div class="switches">
-              <div class="rectangle-203"></div>
-              <div class="rectangle-206"></div>
-            </div>
+            <a href="../Expense_new_image/index.html"
+              ><div class="switches">
+                <div class="rectangle-203"></div>
+                <div class="rectangle-206"></div></div
+            ></a>
           </div>
         </div>
       </div>
@@ -123,5 +124,15 @@
         <div class="home-indicator2"></div>
       </div>
     </div>
+
+    <script>
+      // Khôi phục vị trí cuộn
+      window.onload = function () {
+        const scrollPos = localStorage.getItem("scrollPos");
+        if (scrollPos) {
+          window.scrollTo(0, parseInt(scrollPos));
+        }
+      };
+    </script>
   </body>
 </html>
