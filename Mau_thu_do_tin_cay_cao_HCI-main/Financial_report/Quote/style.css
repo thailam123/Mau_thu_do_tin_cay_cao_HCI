@@ -1,0 +1,143 @@
+.financial-report-quote,
+.financial-report-quote * {
+  box-sizing: border-box;
+}
+.financial-report-quote {
+  background: #ffffff;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-217 {
+  background: var(--violet-violet-100, #7f3dff);
+  width: 375px;
+  height: 812px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.status-bar {
+  width: 375px;
+  height: 44px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.action {
+  position: absolute;
+  inset: 0;
+}
+.time {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.17px;
+  font-weight: 600;
+  position: absolute;
+  left: 19.89px;
+  top: 14px;
+  width: 54px;
+}
+.container {
+  height: auto;
+  position: absolute;
+  left: 293.5px;
+  top: 16.16px;
+  overflow: visible;
+}
+.group-224 {
+  height: auto;
+  position: absolute;
+  left: 13px;
+  top: 63px;
+  overflow: visible;
+}
+.button-large {
+  background: var(--base-light-light-100, #ffffff);
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 343px;
+  height: 56px;
+  position: absolute;
+  left: 16px;
+  top: 706px;
+}
+.primary {
+  color: var(--violet-violet-100, #7f3dff);
+  text-align: center;
+  font-family: var(--title-title-3-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--title-title-3-font-size, 18px);
+  font-weight: var(--title-title-3-font-weight, 600);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-337 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 16px;
+  top: 201px;
+}
+.financial-freedom-is-freedom-from-fear {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--title-title-1-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--title-title-1-font-size, 32px);
+  line-height: var(--title-title-1-line-height, 39px);
+  font-weight: var(--title-title-1-font-weight, 700);
+  position: relative;
+  width: 343px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.robert-kiyosaki {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--title-title-2-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--title-title-2-font-size, 24px);
+  font-weight: var(--title-title-2-font-weight, 600);
+  position: relative;
+  width: 343px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-indicator {
+  width: 375px;
+  height: 34px;
+  position: sticky;
+  left: 0px;
+  bottom: 0px;
+}
+.home-indicator2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.home-indicator3 {
+  background: var(--label-color-dark-primary, #ffffff);
+  border-radius: 100px;
+  width: 134px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 8px;
+}

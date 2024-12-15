@@ -1,0 +1,118 @@
+.settings-export-data-2,
+.settings-export-data-2 * {
+  box-sizing: border-box;
+}
+.settings-export-data-2 {
+  background: #ffffff;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+.ki-m-tra-email-c-a-b-n-ch-ng-t-i-g-i-b-o-c-o-t-i-ch-nh-trong-m-t-s-tr-ng-h-p-c-th-m-t-nhi-u-th-i-gian-h-n-m-t-ch-t-t-y-thu-c-v-o-kho-ng-th-i-gian-v-kh-i-l-ng-ho-t-ng {
+  color: var(--base-dark-dark-25, #292b2d);
+  text-align: center;
+  font-family: var(--body-body-1-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-body-1-font-size, 16px);
+  font-weight: var(--body-body-1-font-weight, 500);
+  position: absolute;
+  left: 16px;
+  top: 414px;
+  width: 343px;
+}
+.illustration {
+  width: 312px;
+  height: 312px;
+  position: absolute;
+  left: 31px;
+  top: 76px;
+  overflow: visible;
+}
+.home-indicator {
+  width: 375px;
+  height: 34px;
+  position: sticky;
+  left: 0px;
+  bottom: 0px;
+}
+.home-indicator2 {
+  background: var(--label-color-light-primary, #000000);
+  border-radius: 100px;
+  width: 134px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 8px;
+}
+.button-large {
+  background: var(--violet-violet-100, #7f3dff);
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 343px;
+  height: 56px;
+  position: sticky;
+  left: 16px;
+  bottom: 50px;
+}
+.primary {
+  color: var(--base-light-light-80, #fcfcfc);
+  text-align: center;
+  font-family: var(--title-title-3-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--title-title-3-font-size, 18px);
+  font-weight: var(--title-title-3-font-weight, 600);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-bar {
+  background: var(--base-light-light-100, #ffffff);
+  width: 375px;
+  height: 44px;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+}
+.action {
+  position: absolute;
+  inset: 0;
+}
+.time {
+  color: var(--colors-dark-base-1, #161719);
+  text-align: center;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.17px;
+  font-weight: 600;
+  position: absolute;
+  left: 19.89px;
+  top: 14px;
+  width: 54px;
+}
+.container {
+  height: auto;
+  position: absolute;
+  left: 293.5px;
+  top: 16.16px;
+  overflow: visible;
+}
+.ios-status-bar {
+  width: 375px;
+  height: 44px;
+  position: sticky;
+  left: 5px;
+  top: -2607px;
+}
+.container2 {
+  height: auto;
+  position: absolute;
+  left: 293.5px;
+  top: 16.16px;
+  overflow: visible;
+}
