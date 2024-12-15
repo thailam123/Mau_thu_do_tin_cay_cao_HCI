@@ -35,6 +35,12 @@
         margin: 0;
         padding: 0;
       }
+
+      .floatingElement {
+        position: fixed;
+        bottom: 0;
+        display: none;
+      }
     </style>
     <title>Document</title>
   </head>
@@ -180,21 +186,28 @@
         <div class="time">9:41</div>
         <img class="container" src="container0.svg" />
       </div>
-
-      <div class="ellipse-25"></div>
-      <div class="magicons-glyph-finance-currency-exchange">
-        <img class="currency-exchange" src="currency-exchange0.svg" />
+      <div class="floatingElement">
+        <div class="ellipse-25"></div>
+        <div class="magicons-glyph-finance-currency-exchange">
+          <img class="currency-exchange" src="currency-exchange0.svg" />
+        </div>
       </div>
-      <a href="../Expense_new/index.html"
-        ><div class="ellipse-252"></div>
-        <div class="magicons-glyph-finance-expense2">
-          <img class="expense3" src="expense2.svg" /></div
-      ></a>
-      <a href="../Income_new/index.html"
-        ><div class="ellipse-253"></div>
-        <div class="magicons-glyph-finance-income2">
-          <img class="income4" src="income3.svg" /></div
-      ></a>
+
+      <div class="floatingElement">
+        <a href="../Expense_new/index.html"
+          ><div class="ellipse-252"></div>
+          <div class="magicons-glyph-finance-expense2">
+            <img class="expense3" src="expense2.svg" /></div
+        ></a>
+      </div>
+
+      <div class="floatingElement">
+        <a href="../Income_new/index.html"
+          ><div class="ellipse-253"></div>
+          <div class="magicons-glyph-finance-income2">
+            <img class="income4" src="income3.svg" /></div
+        ></a>
+      </div>
 
       <div style="position: fixed; bottom: 0" class="bottom-navigation">
         <img class="container2" src="container1.svg" />
@@ -214,12 +227,35 @@
           <img class="pie-chart" src="pie-chart0.svg" />
         </div>
         <div class="ng-n-s-ch">Ngân sắch</div>
-        <a href="../Home/index.html"
-          ><div class="ellipse-254"></div>
+
+        <div id="toggleButton">
+          <div class="ellipse-254"></div>
           <div class="magicons-glyph-user-interface-close">
-            <img class="close" src="close0.svg" /></div
-        ></a>
+            <img class="close" src="close0.svg" />
+          </div>
+        </div>
       </div>
     </div>
+
+    <script>
+      // Get references to the button and the floating element
+      const toggleButton = document.getElementById("toggleButton");
+      const floatingElements = document.querySelectorAll(".floatingElement");
+
+      // Add a click event listener to the toggle button
+      toggleButton.addEventListener("click", () => {
+        // Loop through all floating elements and toggle their visibility
+        floatingElements.forEach((element) => {
+          if (
+            element.style.display === "none" ||
+            element.style.display === ""
+          ) {
+            element.style.display = "block"; // Show the element
+          } else {
+            element.style.display = "none"; // Hide the element
+          }
+        });
+      });
+    </script>
   </body>
 </html>
