@@ -151,9 +151,10 @@
 .bottom-navigation {
   width: 375px;
   height: 79px;
-  position: sticky;
+  position: fixed;
+  bottom: 0px;
   left: 0px;
-  top: 699px;
+  
 }
 .container2 {
   width: 100%;

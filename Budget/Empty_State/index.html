@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
 
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        background: none;
 
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
+        -webkit-font-smoothing: antialiased;
+      }
 
-       -webkit-font-smoothing: antialiased;
-   }
-
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
-  <title>Document</title>
-</head>
-<body>
-  <div class="budget-empty-state">
-    <div class="rectangle-29"></div>
-    <div class="rectangle-28"></div>
-    <div class="b-n-ch-a-c-ng-n-s-ch-t-o-ng-n-s-ch-qu-n-l-t-i-ch-nh-c-a-m-nh">
-      Bạn chưa có ngân sách.
-      <br />
-      Tạo ngân sách để quản lý tài chính của mình
-    </div>
-    <div class="button-large">
-      <div class="primary">Tạo ngân sách</div>
-    </div>
-    <div class="th-ng-5">Tháng 5</div>
-    <div class="magicons-glyph-arrow-arrow-left-2">
-      <img class="arrow-left-2" src="arrow-left-20.svg" />
-    </div>
-    <div class="magicons-glyph-arrow-arrow-right-2">
-      <img class="arrow-right-2" src="arrow-right-20.svg" />
-    </div>
-    <div class="status-bar">
-      <div class="time">9:41</div>
-      <img class="container" src="container0.svg" />
-    </div>
-    <div class="bottom-navigation">
-      <img class="container2" src="container1.svg" />
-      <div class="home2">Trang chủ</div>
-      <div class="magicons-glyph-user-interface-home">
-        <a href="../../Home_Add/index.html"><img class="home3" src="home2.svg"/></a>
+      menu,
+      ol,
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="budget-empty-state">
+      <div class="rectangle-29"></div>
+      <div class="rectangle-28"></div>
+      <div class="b-n-ch-a-c-ng-n-s-ch-t-o-ng-n-s-ch-qu-n-l-t-i-ch-nh-c-a-m-nh">
+        Bạn chưa có ngân sách.
+        <br />
+        Tạo ngân sách để quản lý tài chính của mình
       </div>
-      <div class="transaction2">Giao dịch</div>
-      <div class="magicons-glyph-finance-transaction">
-        <a href="../../Transaction/index.html"><img class="transaction3" src="transaction2.svg"/></a>
+      <div class="button-large">
+        <div class="primary">Tạo ngân sách</div>
       </div>
-      <div class="magicons-glyph-ecommerce-shopping-user">
-        <a href="../../Profile/index.html"><img class="user" src="user0.svg"/></a>
+      <div class="th-ng-5">Tháng 5</div>
+      <div class="magicons-glyph-arrow-arrow-left-2">
+        <img class="arrow-left-2" src="arrow-left-20.svg" />
       </div>
-      <div class="profile2">Tài khoản</div>
-      <div class="magicons-glyph-finance-pie-chart">
-        <img class="pie-chart" src="pie-chart0.svg" />
+      <div class="magicons-glyph-arrow-arrow-right-2">
+        <img class="arrow-right-2" src="arrow-right-20.svg" />
       </div>
-      <div class="budget2">Ngân sách</div>
-      <div class="ellipse-25"></div>
-      <div class="magicons-glyph-user-interface-close">
-        <img class="close" src="close0.svg" />
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <img class="container" src="container0.svg" />
+      </div>
+      <div class="bottom-navigation">
+        <img class="container2" src="container1.svg" />
+        <div class="home2">Trang chủ</div>
+        <div class="magicons-glyph-user-interface-home">
+          <a href="../../Home_Add/index.html"
+            ><img class="home3" src="home2.svg"
+          /></a>
+        </div>
+        <div class="transaction2">Giao dịch</div>
+        <div class="magicons-glyph-finance-transaction">
+          <a href="../../Transaction/index.html"
+            ><img class="transaction3" src="transaction2.svg"
+          /></a>
+        </div>
+        <div class="magicons-glyph-ecommerce-shopping-user">
+          <a href="../../Profile/index.html"
+            ><img class="user" src="user0.svg"
+          /></a>
+        </div>
+        <div class="profile2">Tài khoản</div>
+        <div class="magicons-glyph-finance-pie-chart">
+          <img class="pie-chart" src="pie-chart0.svg" />
+        </div>
+        <div class="budget2">Ngân sách</div>
+        <div class="ellipse-25"></div>
+        <div class="magicons-glyph-user-interface-close">
+          <img class="close" src="close0.svg" />
+        </div>
       </div>
     </div>
-    <div class="home-indicator">
-      <div class="home-indicator2"></div>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
